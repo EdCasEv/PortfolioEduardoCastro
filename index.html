@@ -1,68 +1,282 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Portfolio of Eduardo Castro</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Eduardo Castro | Salesforce Developer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://kit.fontawesome.com/3a1fc5fd59.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
-
 <body>
     <header>
-		<nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
+        <div class="container">
+            <nav>
+                <div class="nav-brand">
+                    <a>
+                        <img src="assets/logo.png" alt="Eduardo Castro"/>
+                    </a>
+                </div>
+
+                <div class="burger-menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home">
+                            <img 
+                            src="assets/profile_pic.jpg" 
+                            alt="Eduardo Castro" 
+                            class="profile-pic nav-link"/>
+                            <span class="caption nav-link">Eduardo Castro</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#formation" class="nav-link">Formation</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" target="_blank" class="nav-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://trailblazer.me/id/edcasev" target="_blank" class="nav-link">
+                            <i class="fab fa-salesforce"></i>
+                        </a>
+                        <a href="https://github.com/EdCasEv" target="_blank" class="nav-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-	<section id="principal">
-        <img src="assets/profile_pic.jpg" alt="Eduardo's photo" height="500px">
-        <h1 id="name">Eduardo Castro</h1>
-        <h2 class="contact">9993981924</h2>
-        <h2 class="contact">eduardo.castro.evia@hotmail.com</h2>
-        <h3>Search for me in:</h3>
-        <ul>
-            <li><a href=""><img src="assets/linkedin_icon.png" alt="Linkedin link" class="contact_icon"></a></li>
-            <li><a href="https://trailblazer.me/id/edcasev"><img src="assets/trailhead_icon.png" alt="Trailhead link" class="contact_icon"></a></li>
-            <li><a href="https://github.com/EdCasEv"><img src="assets/github_icon.png" alt="Github link" class="contact_icon"></a></li>
-        </ul>
-    </section>
+    <main>
+        <section id='home' class="home">
+            <div class='container'>
+                <div class='main-content'>
+                  <div class="home-data">
+                    <img src="assets/home_pic.jpg" alt="Eduardo's photo" class="home-pic">
 
-    <section id="about">
-        <h1 class="title">About me</h1>
-        <p>I'm Eduardo Castro, a graduate from Mechatronics Engineering with high interest in Computer Science and Mobile Development. Open minded and always wanting to learn more.</p>
-    </section>
+                    <div class='information'>
+                      <h1 class="fas fa-id-card" id="name"> Eduardo Castro</h1>
 
-    <section id="formation">
-        <h1 class="title">Formation</h1>
-        <h2>2014-2019</h2>
-        <h2>Faculty of Engineering. UADY</h2>
-        <h3>Mechatronics Engineering degree. <br>
-            85.78 GPA. <br>
-            Specialty area based on electives: Instrumentation and Control.</h3>
-        <img src="assets/uady_logo.png" alt="Uady logo" height="250px">
-    </section>
+                      <!--TODO-->
+                      <h2>Search for me in:</h2>
+                      <div class="footer-social">
+                          <a href="#" target="_blank" class="nav-link">
+                              <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://trailblazer.me/id/edcasev" target="_blank" class="nav-link">
+                              <i class="fab fa-salesforce"></i>
+                          </a>
+                          <a href="https://github.com/EdCasEv" target="_blank" class="nav-link">
+                              <i class="fab fa-github"></i>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#about" class="scroll-down">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section id="skills">
-        <h1 class="title">Skills</h1>
-        <ul>
-            <li><img src="assets/python_icon.png" alt="Python logo" class="skill_icon"> Python </li>
-            <li><img src="assets/android_studio_icon.png" alt="Android Studio logo" class="skill_icon"> Android development with Android Studio </li>
-        </ul>
-    </section>
+    <section id="about" class="about section">
+        <div class="container">
+          <div class="about-text-box">
+            <h1>About me</h1>
+            <p>
+                Hello, I'm Eduardo Castro, a
+                graduate from Mechatronics
+                Engineering and recently exercising as
+                Salesforce Developer.
+            </p>
+            <p>
+                My interests lies in Computer
+                Science, especifically the Data Science
+                and Machine Learning fields, and also Mobile Development
+                where most of my experience comes from.
+            </p>
+            <p>
+                I consider myself open minded and I'm
+                always willing to learn more.
+            </p>
+          </div>
 
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <ul>
-            <li><img src="http://placekitten.com/250" alt="Python logo"> 
-                <a href="">Project 1</a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nesciunt deleniti quod assumenda quis. Eligendi earum sit fugiat laboriosam cupiditate quas temporibus voluptatem molestiae veritatis. Maxime repellendus magnam ipsa sed?</p>
-            </li>
-            <li><img src="http://placekitten.com/250" alt="Python logo"> 
-                <a href="">Project 2</a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nesciunt deleniti quod assumenda quis. Eligendi earum sit fugiat laboriosam cupiditate quas temporibus voluptatem molestiae veritatis. Maxime repellendus magnam ipsa sed?</p>
-            </li>
-        </ul>
-    </section>
+          <div class="about-img">
+            <img
+              src="assets/profile_pic.jpg"
+              alt="Eduardo Castro"
+              class="about-pic"
+            />
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section id="formation" class="formation section">
+        <h1>Formation</h1>
+        <div class="container">
+          <ul class="timeline">
+              <li class="job" data-date="2014 - 2019">
+                  <h2>UADY. Faculty of Engineering.</h2>
+                  <p>Mechatronics Engineering degree.</p>
+                  <p>85.78 GPA.</p>
+                  <p>Specialty area based on electives: Instrumentation
+                    and Control.</p>
+              </li>
+              <li class="job" data-date="Aug 2018 - Jan 2019">
+                  <h2>UADY. Faculty of Engineering. Physics Dept.</h2>
+                  <p>Social Service.</p>
+                  <p>Exercised as an Android Developer along with a Social Program
+                    that teaches selected kids science themes.</p>
+              </li>
+              <li class="job" data-date="Sept - Dec 2019">
+                  <h2>CFE. Peninsular Division. Engineering and customer service department.</h2>
+                  <p>Internship</p>
+                  <p>Exercised as an Android developer.</p>
+              </li>
+              <li class="job" data-date="Feb 2021 - Present">
+                  <h2>KSquare University</h2>
+                  <p>Salesforce Associate Software Engineer.</p>
+              </li>
+          </ul>
+      </div>
+      <hr />
+      </section>
+
+      <section id="skills" class="skills section">
+        <h1>Skills</h1>
+        <h2>These are some of the technologies and programming languages I have experience with:</h2>
+        <div class="container">
+          <img src="assets/android_studio_icon.png" alt="Android Studio logo" class="skill-icon">          
+          <img src="assets/python_icon.png" alt="Python logo" class="skill-icon">
+          <img src="assets/salesforce_icon.svg" alt="Salesforce logo" class="skill-icon">
+          <img src="assets/opencv_icon.png" alt="OpenCV logo" class="skill-icon">
+          <img src="assets/labview_icon.png" alt="LabVIEW logo" class="skill-icon">
+          <img src="assets/java_icon.svg" alt="Java logo" class="skill-icon">
+          <img src="assets/mysql_icon.svg" alt="mySQL logo" class="skill-icon">
+          <img src="assets/c_icon.svg" alt="C logo" class="skill-icon">
+          <img src="assets/cpp_icon.svg" alt="C++ logo" class="skill-icon">
+          <img src="assets/c_sharp_icon.svg" alt="C# logo" class="skill-icon">
+          <img src="assets/flutter_icon.svg" alt="Flutter logo" class="skill-icon">
+          <img src="assets/kotlin_icon.svg" alt="Kotlin logo" class="skill-icon">
+          <img src="assets/javascript_icon.svg" alt="Javascript logo" class="skill-icon">
+          <img src="assets/html5_icon.svg" alt="HTML logo" class="skill-icon">
+          <img src="assets/css3_icon.png" alt="CSS logo" class="skill-icon">
+        </div>
+        <hr /> 
+      </section>
+
+      <section id="projects" class="projects section">
+        <div class="title-heading">
+          <h1>Projects</h1>
+          <h2>These are some of the projects I´ve made:</h2>
+          <h2>(The images and descriptions used are somewhat vague in order to avoid
+            revealing sensitive data about the companies for which I developed)</h2>
+        </div>
+        <div class="project-item">
+          <div class="project-img has-margin-right">
+            <img src="images/sppms.png" />
+          </div>
+          <div class="project-description">
+            <h2>Leaf dryer oven</h2>
+            <p>
+              Here I made, with the help of a social service co-worker, a Leaf Dryer Oven
+              controlled with an <b>Android</b> app using <b>Bluetooth communication</b>
+              on a Master/slave model in which the app was the Master and an <b>Arduino</b>
+              was the slave that put in motion the oven and read the temperature 
+            </p>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-description has-margin-right">
+            <h2>Geolocation app for area reports</h2>
+            <p>
+              In this app I made an <b>Android</b> app that used the <b>Google Maps API</b> to
+              retrieve the geolocation data and then allow the user to fill in a report that included
+              photos of the problem (by which I used <b>Read/Write permissions for data storage</b> and
+              the <b>Camera X library</b> to allow the camera use in-app).
+            </p>
+            <p>
+              Also, I used <b>Room Persistence Library</b> that functions with <b>SQLite</b> queries
+              to store internally the data of the reports.
+              And in addition to this I implemented Firebase for Authentication purposes.
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="images/to-do.png" />
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-img has-margin-right">
+            <img src="images/calculator.png" />
+          </div>
+          <div class="project-description">
+            <h2>Barcode lector app</h2>
+            <p>
+              This app consisted primarily on a barcode lector that decoded the
+              data inside an internal barcode used for the company as identifiers
+              in certain products. I achieved this by using the <b>ML Kit by Google</b>
+              and the previously mentioned <b>Camera X Library</b> and some knowledge I 
+              previously learned, like <b>Room Persistence Library</b> to store the data decoded.
+            </p>
+            <p>
+              At the end the decoded lectures could be sent to the company's servers using the
+              <b>FTP Protocol</b>.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+    <footer>
+        <div class="footer-nav">
+          <a href="#home" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#formation" class="footer-nav-link">Formation</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+        </div>
+        <div class="footer-coded-by">
+          <p>
+            <i class="fas fa-code"></i> by Eduardo Castro &copy; 2021
+          </p>
+          <p>Built using HTML, CSS and JavaScript</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" target="_blank" class="nav-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://trailblazer.me/id/edcasev" target="_blank" class="nav-link">
+                <i class="fab fa-salesforce"></i>
+            </a>
+            <a href="https://github.com/EdCasEv" target="_blank" class="nav-link">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+      </footer>
+    <script src='main.js'></script>
 </body>
+</html>
