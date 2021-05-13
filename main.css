@@ -64,8 +64,6 @@ h1 {
     var(--complementary-color) 0%,
     rgba(102, 51, 153, 1) 100%
   );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 hr {
