@@ -181,7 +181,7 @@ nav {
 .nav-list {
     width: 24rem;
     height: 100vh;
-    background-color: var(--tagline-color);
+    background-color: #1c2f41;
     position: fixed;
     top: 0;
     right: -26rem;
@@ -249,14 +249,14 @@ nav {
 
 .home h1 {
   font-weight: bold;
-  font-size: 70px;
+  font-size: 6rem;
   margin: 1rem;
 }
 
 .home h2 {
   font-family: "Font Awesome 5 Brands";
   font-weight: 500;
-  font-size: 50px;
+  font-size: 4.5rem;
   text-align: center;
   color: var(--complementary-color);
   background: linear-gradient(
@@ -271,7 +271,7 @@ nav {
 
 .home h3 {
   font-weight: 100;
-  font-size: 30px;
+  font-size: 2.5rem;
   margin: 1rem;
   margin-top: 3rem;
 }
@@ -349,26 +349,25 @@ nav {
     margin-bottom: 1.45rem;
 }
 
-/* Formation Timeline */
+/* Trajectory Timeline */
 
-.formation {
+.trajectory {
   align-items: center;
 }
 
-.formation h1{
+.trajectory h1{
   margin-bottom: 4rem;
 }
 
-.formation .container {
+.trajectory .container {
   margin: 5rem;
 }
 
 .timeline {
-    border-left: 3px solid #727cf5;
+    border-left: 3px solid var(--analogous-color2);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    /* TO DO */
-    background: rgba(114, 124, 245, 0.09);
+    background: #1c2f41;
     margin: auto;
     letter-spacing: 0.2px;
     position: relative;
@@ -425,8 +424,8 @@ nav {
 }
 
 .timeline .job:after {
-    -webkit-box-shadow: 0 0 0 3px #727cf5;
-    box-shadow: 0 0 0 3px #727cf5;
+    -webkit-box-shadow: 0 0 0 3px var(--analogous-color2);
+    box-shadow: 0 0 0 3px var(--analogous-color2);
     left: -55.8px;
     background: #fff;
     border-radius: 50%;
@@ -533,6 +532,10 @@ footer a:hover {
 /* Responsive Design */
 
 @media (max-width: 750px) {
+  .nav-link {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
 
   .home-data {
     flex-direction: column;
@@ -550,19 +553,19 @@ footer a:hover {
 
   .home h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3rem;
     margin: 1rem;
   }
   
   .home h2 {
     font-family: "Font Awesome 5 Brands";
     font-weight: 500;
-    font-size: 30px;
+    font-size: 2rem;
   }
   
   .home h3 {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 1rem;
     margin-top: 3rem;
   }
@@ -580,7 +583,7 @@ footer a:hover {
     font-size: 1.3rem;
   }
 
-  .formation .container {
+  .trajectory .container {
     margin: 0;
   }
 
@@ -676,4 +679,3 @@ footer a:hover {
     margin: 0 0 2.45rem;
   }
 }
-
