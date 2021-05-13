@@ -59,11 +59,13 @@ h1 {
   margin: 1rem 0;
   text-align: center;
   color: var(--complementary-color);
+  /*
   background: linear-gradient(
     to right,
     var(--complementary-color) 0%,
     rgba(102, 51, 153, 1) 100%
   );
+  */
 }
 
 hr {
