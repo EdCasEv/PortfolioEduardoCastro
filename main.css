@@ -229,17 +229,46 @@ nav {
     position: relative;
 }
 
+.home h1 {
+  font-weight: bold;
+  font-size: 70px;
+  margin: 1rem;
+}
+
+.home h2 {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
+  color: var(--complementary-color);
+  background: linear-gradient(
+    to right,
+    var(--complementary-color) 0%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home h3 {
+  font-weight: 100;
+  font-size: 30px;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
 .home-pic {
   height: 30rem;
   width: auto;
   border-radius: 50%;
   display: block;
-  margin: 1.5rem 0;
+  margin: 5%;
 }
 
 .main-content {
     width: 100%;
-    max-width: 50rem;
+    max-width: 90rem;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -256,11 +285,6 @@ nav {
   align-items: center;
 }
 
-.main-content h2 {
-    font-size: 1.7rem;
-    font-weight: 400;
-}
-
 .scroll-down i {
     color: white;
     transition: color 650ms;
@@ -270,6 +294,11 @@ nav {
   
 .scroll-down i:hover {
     color: var(--complementary-color);
+}
+
+.home-social a {
+  margin: 0 0.5rem;
+  font-size: 4rem;
 }
 
 /* About */
@@ -484,6 +513,7 @@ footer a {
   .home-data {
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
   }
 
   .home-pic {
@@ -492,7 +522,30 @@ footer a {
     width: 150px;
     height: 150px;
     display: block;
-    margin: 1.5rem 0;
+  }
+
+  .home h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 1rem;
+  }
+  
+  .home h2 {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 500;
+    font-size: 30px;
+  }
+  
+  .home h3 {
+    font-weight: 100;
+    font-size: 20px;
+    margin: 1rem;
+    margin-top: 3rem;
+  }
+
+  .home-social a {
+    margin: 0 0.5rem;
+    font-size: 2rem;
   }
 
   .about .container {
@@ -551,6 +604,7 @@ footer a {
   .home-data {
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
   }
 
   .home-pic {
@@ -559,7 +613,6 @@ footer a {
     width: 150px;
     height: 150px;
     display: block;
-    margin: 1.5rem 0;
   }
 
   .about-text-box h2 {
