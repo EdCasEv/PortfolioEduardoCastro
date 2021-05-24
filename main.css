@@ -105,10 +105,17 @@ hr {
 
 .section h2{
   font-family: "Poppins", sans-serif;
-  text-align: center;
   font-size: 2rem;
   margin: 3rem;
-  text-align: center;
+  text-align: left;
+}
+
+.section h3{
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: var(--complementary-color);
+  font-size: 1.5rem;
+  margin: 3rem;
 }
 
 /* Nav */
@@ -455,7 +462,21 @@ nav {
   justify-items: center;
 }
 
+.skill{
+  align-items: center;
+  text-align: center;
+}
+
+.skill p{
+  visibility: hidden;
+}
+
+.skill:hover p{
+  visibility: visible;
+}
+
 .skill-icon{
+  vertical-align: ce;
   height: 10em;
   width: 10em;
 }
@@ -526,12 +547,11 @@ footer a:hover {
 }
   
 .footer-coded-by p{
-    margin: 1rem 0;
     font-size: 1.5rem;
 }
   
-.footer-social a {
-    margin: 0 3rem;
+.footer-social i {
+    margin: 2rem 3rem;
     font-size: 3rem;
 }
 
@@ -543,11 +563,6 @@ footer a:hover {
     letter-spacing: 1.5px;
   }
 
-  .home-data {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-  }
 
   .home-pic {
     object-fit: cover;
@@ -581,10 +596,6 @@ footer a:hover {
     font-size: 2rem;
   }
 
-  .about .container {
-    flex-direction: column;
-  }
-
   .about-text-box p {
     font-size: 1.3rem;
   }
@@ -614,30 +625,14 @@ footer a:hover {
   .skills h2{
     font-size: 1.5rem;
   }
-
-  .skills .container{
-    grid-template-columns: repeat(4, 1fr);
+  
+  .skill-icon{
+    height: 5em;
+    width: 5em;
   }
 
-  .skill-icon {
-    grid-column: span 2;
-  }
-
-  .skill-icon:nth-last-child(1):nth-child(odd) {
-    grid-column: 2 / span 2;
-  }
-
-  .projects h2{
-    font-size: 1.5rem;
-  }
-
-  .project-item {
-    flex-direction: column;
-    padding: 2rem;
-    box-shadow: 0 20px 30px 0 rgba(212, 255, 255, 0.15);
-  }
-  .project-img {
-    width: 20rem;
+  .skill p{
+    visibility: visible;
   }
 
   footer {
@@ -660,13 +655,6 @@ footer a:hover {
 }
 
 @media (max-width: 665px) {
-
-  .home-data {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-  }
-
   .home-pic {
     object-fit: cover;
     border-radius: 50%;
@@ -682,5 +670,75 @@ footer a:hover {
 
   .about-text-box p {
     margin: 0 0 2.45rem;
+  }
+}
+
+@media (max-width: 750px) and (orientation: landscape){
+
+  .home-data{
+    padding-top: 3rem;
+    align-self: center;
+  }
+
+  .information{
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .home-pic {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .home h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  .home h2 {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  .home h3 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .scroll-down i {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+}
+
+@media (orientation: portrait){
+  .home-data {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .projects h2{
+    font-size: 1.5rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0 20px 30px 0 rgba(212, 255, 255, 0.15);
+  }
+  
+  .project-img {
+    width: 20rem;
   }
 }
